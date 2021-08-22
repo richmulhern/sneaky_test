@@ -23,7 +23,7 @@ var sneakyGrid = generateSneakyGrid(0, 0, 3, 3);
 
 function passNote(x, y, i, j, chance = 100)
 {
-    // if you're note has arrived at it's destination send back the final chance amount
+    // if your note has arrived at it's destination send back the final chance amount
     if (x == i && y == j) {
         return {'path': [[x,y]], 'chance': chance};
     }

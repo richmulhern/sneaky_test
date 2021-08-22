@@ -19,6 +19,8 @@ function generateSneakyGrid(x, y, i, j)
 
 var sneakyGrid = generateSneakyGrid(0, 0, 3, 3);
 
+//Solution starts here
+
 function passNote(x, y, i, j, chance = 100)
 {
     // if you're note has arrived at it's destination send back the final chance amount

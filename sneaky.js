@@ -45,14 +45,10 @@ function passNote(x, y, i, j, chance = 100)
     }
 
     // compare which path is best
-    if (xData.chance < yData.chance) {
-        bestData = xData;
-    } else {
-        bestData = yData;
-    }
+    let bestData = (xData.chance < yData.chance) ? xData : yData;
 
     // return the best path from this point and it's chance to the previous student
-    return {'path': [].concat([[x,y]], bestData.path), 'chance': bestData.chance}
+    return {'path': [[x,y], ...bestData.path], 'chance': bestData.chance}
 }
 
 console.log(passNote(0, 0, 3, 3));

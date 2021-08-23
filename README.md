@@ -1,5 +1,5 @@
 # sneaky_test
-Interview Code Challenge Solution
+Interview Code Challenge
 
 ### Problem
 
